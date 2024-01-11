@@ -1,6 +1,7 @@
 # cd
 ## 1. Share an example of using the command with no arguments.
 ![Image](cd1.png)
+ <br> 
 When I do cd to no command nothing happens.
 ![Image](cd4.png)
 When I do cd in a different directory the directory is changed to the home directory.
