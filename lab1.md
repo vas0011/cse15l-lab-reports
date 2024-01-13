@@ -16,8 +16,14 @@ When I put a path as an arguement the directory is changed to the path.
 When I put a file as an arguement I get an error and there is output saying that the file isn't a directory.
 # ls
 ## 1. Share an example of using the command with no arguments.
+![Image](ls1.png)
+<br> 
 ## 2. Share an example of using the command with a path to a directory as an argument.
+![Image](ls2.png)
+<br> 
 ## 3. Share an example of using the command with a path to a file as an argument.
+![Image](ls3.png)
+<br> 
 # cat
 ## 1. Share an example of using the command with no arguments.
 ## 2. Share an example of using the command with a path to a directory as an argument.
