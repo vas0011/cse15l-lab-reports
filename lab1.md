@@ -26,5 +26,11 @@ When I put a file as an arguement I get an error and there is output saying that
 <br> 
 # cat
 ## 1. Share an example of using the command with no arguments.
+![Image](cat1.png)
+<br> 
 ## 2. Share an example of using the command with a path to a directory as an argument.
+![Image](cat2.png)
+<br> 
 ## 3. Share an example of using the command with a path to a file as an argument.
+![Image](cat3.png)
+<br> 
