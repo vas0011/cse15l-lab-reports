@@ -14,7 +14,7 @@ When I put a path as an arguement the directory is changed to the path.
 ![Image](cd3.png)
 <br> 
 When I put a file as an arguement I get an error and there is output saying that the file isn't a directory.
-# ls
+# ```ls```
 ## 1. ls with no arguments
 ![Image](ls1.png)
 <br> 
@@ -26,7 +26,7 @@ Typing ls with a path to a directory as an arguement lists the folders and files
 ## 3. ls with a path to a file as an argument
 ![Image](ls3.png)
 <br> 
-# cat
+# ```cat```
 ## 1. cat with no arguments
 ![Image](cat1.png)
 <br> 
