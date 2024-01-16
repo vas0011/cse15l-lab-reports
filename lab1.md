@@ -28,11 +28,11 @@ This results in an error because ```ls``` is used to list files and folders in a
 ## 1. ```cat``` with no arguments
 ![Image](cat1.png)
 <br> 
-
+This results in an error since ```cat``` needs a file or files as an arguement to print the content of the files.
 ## 2. ```cat``` with a path to a directory as an argument
 ![Image](cat2.png)
 <br> 
-Typing a path to a directory as an arguement results in an error. This results in an error because a directory because cat prints contents of files and directories arent files.
+Typing a path to a directory as an arguement results in an error. This results in an error because ```cat``` prints contents of files and directories aren't files.
 ## 3. ```cat``` with a path to a file as an argument
 ![Image](cat4.png)
 <br> 
