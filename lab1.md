@@ -10,7 +10,7 @@ When we put a path to a directory as an arguement the directory is changed to th
 ## 3. ```cd``` with a path to a file as an argument
 ![Image](cd3.png)
 <br> 
-When we put a file as an arguement we get an error since cd is used for changing directories.
+When we put a file as an arguement we get an error since ```cd``` is used for changing directories.
 # ```ls```
 ## 1. ```ls``` with no arguments
 ![Image](ls1.png)
