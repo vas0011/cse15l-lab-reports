@@ -34,9 +34,6 @@ This results in an error since ```cat``` needs a file or files as an arguement t
 <br> 
 Typing a path to a directory as an arguement results in an error. This results in an error because ```cat``` prints contents of files, and directories aren't files.
 ## 3. ```cat``` with a path to a file as an argument
-![Image](cat4.png)
-<br> 
-Entering one file as an arguement just displays the contents of the file.
 ![Image](cat3.png)
 <br> 
-When putting two files as the arguement the contents of both files are displayed.
+Entering one file as an arguement just displays the contents of the file. When putting two files as the arguement the contents of both files are displayed.
