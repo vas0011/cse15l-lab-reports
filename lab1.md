@@ -2,15 +2,15 @@
 ## 1. ```cd``` with no arguments
 ![Image](cd4.png)
  <br> 
-When we run ```cd``` in a different directory the directory is changed to the home directory.
+When we run ```cd``` the directory is changed to the home directory.
 ## 2. ```cd``` with a path to a directory as an argument
 ![Image](cd2.png)
 <br> 
-When I put a path as an arguement the directory is changed to the path.
+When we put a path to a directory as an arguement the directory is changed to the path.
 ## 3. ```cd``` with a path to a file as an argument
 ![Image](cd3.png)
 <br> 
-When I put a file as an arguement I get an error and there is output saying that the file isn't a directory.
+When we put a file as an arguement we get an error and there is output saying that the file isn't a directory.
 # ```ls```
 ## 1. ```ls``` with no arguments
 ![Image](ls1.png)
