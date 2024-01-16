@@ -6,23 +6,24 @@ When we run ```cd``` the directory is changed to the home directory.
 ## 2. ```cd``` with a path to a directory as an argument
 ![Image](cd2.png)
 <br> 
-When we put a path to a directory as an arguement the directory is changed to the path.
+When we put a path to a directory as an arguement the directory is changed to the specified directory.
 ## 3. ```cd``` with a path to a file as an argument
 ![Image](cd3.png)
 <br> 
-When we put a file as an arguement we get an error and there is output saying that the file isn't a directory.
+When we put a file as an arguement we get an error since cd is used for changing directories.
 # ```ls```
 ## 1. ```ls``` with no arguments
 ![Image](ls1.png)
 <br> 
-When I type ```ls``` with no argueents it lists the folders and files in the working directory.
+When we type ```ls``` with no argueents it lists the folders and files in the working directory.
 ## 2. ```ls``` with a path to a directory as an argument
 ![Image](ls2.png)
 <br> 
-Typing ```ls``` with a path to a directory as an arguement lists the folders and files in the path.
+Typing ```ls``` with a path to a directory as an arguement lists the folders and files in the specified path.
 ## 3. ```ls``` with a path to a file as an argument
 ![Image](ls3.png)
 <br> 
+This results in an error because ```ls``` is used to list files and folders in a directory and a file does not contain files and folders.
 # ```cat```
 ## 1. ```cat``` with no arguments
 ![Image](cat1.png)
