@@ -15,7 +15,7 @@ When we put a file as an arguement we get an error since cd is used for changing
 ## 1. ```ls``` with no arguments
 ![Image](ls1.png)
 <br> 
-When we type ```ls``` with no argueents it lists the folders and files in the working directory.
+When we type ```ls``` with no arguements it lists the folders and files in the working directory.
 ## 2. ```ls``` with a path to a directory as an argument
 ![Image](ls2.png)
 <br> 
