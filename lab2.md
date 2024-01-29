@@ -50,8 +50,10 @@ class ChatServer{
 **1. Which methods in your code are called?**\
 The main method is called when ChatServer is run. The method handlerRequest is also run.\
 **2. What are the relevant arguments to those methods, and the values of any relevant fields of the class?**\
-The main method takes the port number as an arguement and if no arguement is typed in "Missing port number! Try any number between 1024 to 49151" is printed. Then a new server is started with that specific port. Then after this the handleRequest is run and the url path is /add-message. Then \
+The main method takes the port number as an arguement and if no arguement is typed in "Missing port number! Try any number between 1024 to 49151" is printed. Then a new server is started with that specific port. Then after this the handleRequest is run and the url path is /add-message as seen in the screen shot and  the values for s and user are Hello_Bob and Varun_Sharma respectiviely.  \
 **3. How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.**\
+The value for messages gets changed to Varun_Sharma: Hello_Bob.
+
 
 ![Image](addmessage2.png)
 **1. Which methods in your code are called?**\
@@ -61,5 +63,10 @@ The main method takes the port number as an arguement and if no arguement is typ
 **3. How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.**\
 \
 # Part 2
+**The absolute path to the private key for your SSH key for logging into ieng6 (on your computer, an EdStem workspace, or on the home directory of the lab computer)**\
+![Image](part2question1.png)
+**The absolute path to the public key for your SSH key for logging into ieng6 (this is the one you copied to your account on ieng6, so it should be a path on ieng6's file system)**\
 
+**A terminal interaction where you log into your ieng6 account without being asked for a password.**\
+![Image](part2question3.png)
 # Part 3
