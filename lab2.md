@@ -47,18 +47,18 @@ class ChatServer{
 ```
 ## Screenshots
 ![Image](addmessage1.png)
-1. Which methods in your code are called?\
+**1. Which methods in your code are called?**\
 The main method is called when ChatServer is run. The method handlerRequest is also run.
-2. What are the relevant arguments to those methods, and the values of any relevant fields of the class?\
+**2. What are the relevant arguments to those methods, and the values of any relevant fields of the class?**\
 The main method takes the port number as an arguement and if no arguement is typed in "Missing port number! Try any number between 1024 to 49151" is printed. Then a new server is started with that specific port. Then after this the handleRequest is run and the url path is /add-message. Then 
-3. How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.\
+**3. How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.**\
 
 ![Image](addmessage2.png)
-1. Which methods in your code are called?\
+**1. Which methods in your code are called?**\
 
-2. What are the relevant arguments to those methods, and the values of any relevant fields of the class?\
+**2. What are the relevant arguments to those methods, and the values of any relevant fields of the class?**\
 
-3. How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.\
+**3. How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.**\
 
 # Part 2
 
