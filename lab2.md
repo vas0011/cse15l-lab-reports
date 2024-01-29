@@ -64,9 +64,9 @@ The value for messages gets changed to Varun_Sharma: Hello_Bob.
 \
 # Part 2
 **The absolute path to the private key for your SSH key for logging into ieng6 (on your computer, an EdStem workspace, or on the home directory of the lab computer)**\
-![Image](part2question1.png)\
+![Image](part2question1.png)
 **The absolute path to the public key for your SSH key for logging into ieng6 (this is the one you copied to your account on ieng6, so it should be a path on ieng6's file system)**\
 
 **A terminal interaction where you log into your ieng6 account without being asked for a password.**\
-![Image](part2question3.png)\
+![Image](part2question3.png)
 # Part 3
