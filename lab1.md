@@ -2,11 +2,11 @@
 ## 1. ```cd``` with no arguments
 ![Image](cd4.png)
  <br> 
-The working directory is initially ```/home/lecture1/messages```. When we run ```cd``` the directory is changed to the home directory. This is not an error because what 
+The working directory is initially ```/home/lecture1/messages```. When we run ```cd``` the directory is changed to the home directory. This is not an error.
 ## 2. ```cd``` with a path to a directory as an argument
 ![Image](cd2.png)
 <br> 
-The working directory is initially ```/home```. When we put a path to a directory as an arguement the directory is changed to the specified directory.
+The working directory is initially ```/home```. When we put a path to a directory as an arguement the directory is changed to the specified directory. This is not an error.
 ## 3. ```cd``` with a path to a file as an argument
 ![Image](cd3.png)
 <br> 
@@ -15,11 +15,11 @@ The working directory is initially ```/home/lecture1/messages```. When we put a 
 ## 1. ```ls``` with no arguments
 ![Image](ls1.png)
 <br> 
-The working directory is initially ```/home/lecture1```. When we type ```ls``` with no arguements it lists the folders and files in the working directory.
+The working directory is initially ```/home/lecture1```. When we type ```ls``` with no arguements it lists the folders and files in the working directory. This is not an error.
 ## 2. ```ls``` with a path to a directory as an argument
 ![Image](ls2.png)
 <br> 
-The working directory is initially ```/home```. Typing ```ls``` with a path to a directory as an arguement lists the folders and files in the specified path.
+The working directory is initially ```/home```. Typing ```ls``` with a path to a directory as an arguement lists the folders and files in the specified path. This is not an error.
 ## 3. ```ls``` with a path to a file as an argument
 ![Image](ls3.png)
 <br> 
@@ -36,4 +36,4 @@ The working directory is initially ```/home```. Typing a path to a directory as 
 ## 3. ```cat``` with a path to a file as an argument
 ![Image](cat3.png)
 <br> 
-The working directory is initially ```/home/lecture1/messages```. Entering one file as an arguement just displays the contents of the file. When putting two files as the arguement the contents of both files are displayed.
+The working directory is initially ```/home/lecture1/messages```. Entering one file as an arguement just displays the contents of the file. When putting two files as the arguement the contents of both files are displayed. This is not an error.
