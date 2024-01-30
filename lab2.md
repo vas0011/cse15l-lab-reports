@@ -68,4 +68,4 @@ The value for ```parameters```, ```getMessage```, and ```getUser``` are all chan
 **A terminal interaction where you log into your ieng6 account without being asked for a password.**\
 ![Image](part2question3.png)
 # Part 3
-One thing I learned in week 2 was what the ```ssh``` command did. I learned that ssh established a secure connection to a remote machine. During the lab we used the ssh command to connect to the PCs in the basement.
+One thing I learned in week 2 was what the ```ssh``` command did. I learned that ssh establishes a secure connection to a remote machine. During the lab we used the ssh command to connect to the PCs in the basement.
