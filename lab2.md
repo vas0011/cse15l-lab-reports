@@ -69,4 +69,4 @@ The value for ```parameters```, ```getMessage```, and ```getUser``` are all chan
 **A terminal interaction where you log into your ieng6 account without being asked for a password.**\
 ![Image](part2question3.png)
 # Part 3
-Something new I learned was how to create a web server. I learned that you need to have a URL hander a Server.java file and a java file with the handle request method. I also learned you can get queries from the web server using the ```.getQuery()``` method.
+One thing I learned in week 2 was what the ```ssh``` command did. I learned that ssh established a secure connection to a remote machine. During the lab we used the ssh command to connect to the PCs in the basement.
