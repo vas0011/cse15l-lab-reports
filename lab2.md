@@ -48,18 +48,18 @@ class ChatServer{
 ## Screenshots
 ![Image](addmessage1.png)
 **1. Which methods in your code are called?**\
-The ```main``` method is called when ```ChatServer``` is run. The method ```handlerRequest``` is also called.\
+The ```main``` method is called when ```ChatServer``` is run. The method ```handleRequest``` is also called.\
 **2. What are the relevant arguments to those methods, and the values of any relevant fields of the class?**\
 The main method takes the port number as an arguement and if no arguement is typed in "Missing port number! Try any number between 1024 to 49151" is printed. Then a new server is started with that specific port. Then after this the handleRequest is run and the url path is /add-message as seen in the screenshot. The values for the variable ```parameters``` is ```["s=Hello_Bob","user=Varun_Sharma"]```, and ```getMessage = ["s","Hello_Bob"]``` and ```getUser= ["user","Varun_Sharma"]```. Then the variable ```messages``` is updated from an empty String to Varun_Sharma: Hello_Bob.  \
 **3. How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.**\
 The value for ```messages``` gets changed from an empty string to "Varun_Sharma: Hello_Bob." No other values are changed because none of the other variables like ```parameters```, ```getMessage```, and ```getUser``` were initialized outside the method ```handleRequest```.
 ![Image](addmessage2.png)
 **1. Which methods in your code are called?**\
-The method handlerRequest is called. \
+The method ```handleRequest``` is called. \
 **2. What are the relevant arguments to those methods, and the values of any relevant fields of the class?**\
-In handleRequest the url path path is still /add-message. The values for parameters is ["s=Hello_Varun","user=Bob"], and getMessage = ["s","Hello_Varun"] and getUser= ["user","Bob"]. Then messages is updated from Varun_Sharma: Hello_Bob to "Varun_Sharma: Hello_Bob" and "Bob: Hello_Varun" seperated by a line .\
+In ```handleRequest``` the url path path is still /add-message. The values for ```parameters``` is ```["s=Hello_Varun","user=Bob"]```, and ```getMessage = ["s","Hello_Varun"]``` and ```getUser= ["user","Bob"]```. Then ```messages``` is updated from Varun_Sharma: Hello_Bob to "Varun_Sharma: Hello_Bob" and "Bob: Hello_Varun" seperated by a line .\
 **3. How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.**\
-The value for parameters, getMessage, getUser, and messages are changed.
+The value for ```parameters```, ```getMessage```, and ```getUser``` are all changed to reflect the changed query as seen in the screenshot. The variable ```messages``` is updated  to include the new values of the query.
 \
 # Part 2
 **The absolute path to the private key for your SSH key for logging into ieng6 (on your computer, an EdStem workspace, or on the home directory of the lab computer)**\
