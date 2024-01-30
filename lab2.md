@@ -50,7 +50,7 @@ class ChatServer{
 **1. Which methods in your code are called?**\
 The main method is called when ChatServer is run. The method handlerRequest is also run.\
 **2. What are the relevant arguments to those methods, and the values of any relevant fields of the class?**\
-The main method takes the port number as an arguement and if no arguement is typed in "Missing port number! Try any number between 1024 to 49151" is printed. Then a new server is started with that specific port. Then after this the handleRequest is run and the url path is /add-message as seen in the screen shot and  the values for s and user are Hello_Bob and Varun_Sharma respectiviely.  \
+The main method takes the port number as an arguement and if no arguement is typed in "Missing port number! Try any number between 1024 to 49151" is printed. Then a new server is started with that specific port. Then after this the handleRequest is run and the url path is /add-message as seen in the screenshot. The values for parameters is ["s=Hello_Bob","user=Varun_Sharma"], and getMessage = ["s","Hello_Bob"] and getUser= ["user","Varun_Sharma"]. Then messages is updated to Varun_Sharma: Hello_Bob.  \
 **3. How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.**\
 The value for messages gets changed to Varun_Sharma: Hello_Bob.
 
