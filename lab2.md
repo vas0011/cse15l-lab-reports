@@ -48,19 +48,20 @@ class ChatServer{
 ## Screenshots
 ![Image](addmessage1.png)
 **1. Which methods in your code are called?**\
-The main method is called when ChatServer is run. The method handlerRequest is also run.\
+The main method is called when ChatServer is run. The method handlerRequest is called.\
 **2. What are the relevant arguments to those methods, and the values of any relevant fields of the class?**\
-The main method takes the port number as an arguement and if no arguement is typed in "Missing port number! Try any number between 1024 to 49151" is printed. Then a new server is started with that specific port. Then after this the handleRequest is run and the url path is /add-message as seen in the screenshot. The values for parameters is ["s=Hello_Bob","user=Varun_Sharma"], and getMessage = ["s","Hello_Bob"] and getUser= ["user","Varun_Sharma"]. Then messages is updated to Varun_Sharma: Hello_Bob.  \
+The main method takes the port number as an arguement and if no arguement is typed in "Missing port number! Try any number between 1024 to 49151" is printed. Then a new server is started with that specific port. Then after this the handleRequest is run and the url path is /add-message as seen in the screenshot. The values for parameters is ["s=Hello_Bob","user=Varun_Sharma"], and getMessage = ["s","Hello_Bob"] and getUser= ["user","Varun_Sharma"]. Then messages is updated from an empty String to Varun_Sharma: Hello_Bob.  \
 **3. How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.**\
-The value for messages gets changed to Varun_Sharma: Hello_Bob.
+The value for messages gets changed from an empty string to "Varun_Sharma: Hello_Bob." No other values are changed.
 
 
 ![Image](addmessage2.png)
 **1. Which methods in your code are called?**\
-\
+The method handlerRequest is called. \
 **2. What are the relevant arguments to those methods, and the values of any relevant fields of the class?**\
-\
+In handleRequest the url path path is still /add-message. The values for parameters is ["s=Hello_Varun","user=Bob"], and getMessage = ["s","Hello_Varun"] and getUser= ["user","Bob"]. Then messages is updated from Varun_Sharma: Hello_Bob to "Varun_Sharma: Hello_Bob" and "Bob: Hello_Varun" seperated by a line .\
 **3. How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.**\
+The value for parameters, getMessage, getUser, and messages are changed.
 \
 # Part 2
 **The absolute path to the private key for your SSH key for logging into ieng6 (on your computer, an EdStem workspace, or on the home directory of the lab computer)**\
@@ -70,3 +71,4 @@ The value for messages gets changed to Varun_Sharma: Hello_Bob.
 **A terminal interaction where you log into your ieng6 account without being asked for a password.**\
 ![Image](part2question3.png)
 # Part 3
+Something new I learned is
