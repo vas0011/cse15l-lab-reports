@@ -53,8 +53,6 @@ The main method is called when ChatServer is run. The method handlerRequest is c
 The main method takes the port number as an arguement and if no arguement is typed in "Missing port number! Try any number between 1024 to 49151" is printed. Then a new server is started with that specific port. Then after this the handleRequest is run and the url path is /add-message as seen in the screenshot. The values for parameters is ["s=Hello_Bob","user=Varun_Sharma"], and getMessage = ["s","Hello_Bob"] and getUser= ["user","Varun_Sharma"]. Then messages is updated from an empty String to Varun_Sharma: Hello_Bob.  \
 **3. How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.**\
 The value for messages gets changed from an empty string to "Varun_Sharma: Hello_Bob." No other values are changed.
-
-
 ![Image](addmessage2.png)
 **1. Which methods in your code are called?**\
 The method handlerRequest is called. \
@@ -71,4 +69,4 @@ The value for parameters, getMessage, getUser, and messages are changed.
 **A terminal interaction where you log into your ieng6 account without being asked for a password.**\
 ![Image](part2question3.png)
 # Part 3
-Something new I learned is
+Something new I learned was how to create a web server. I learned that you need to have a URL hander a Server.java file and a java file with the handle request method. I also learned you can get queries from the web server using the ```.getQuery()``` method.
