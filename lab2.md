@@ -60,7 +60,6 @@ The method ```handleRequest``` is called. \
 In ```handleRequest``` the url path path is still /add-message. The values for ```parameters``` is ```["s=Hello_Varun","user=Bob"]```, and ```getMessage = ["s","Hello_Varun"]``` and ```getUser= ["user","Bob"]```. Then ```messages``` is updated from "Varun_Sharma: Hello_Bob" to "Varun_Sharma: Hello_Bob" and "Bob: Hello_Varun" seperated by a line .\
 **3. How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.**\
 The value for ```parameters```, ```getMessage```, and ```getUser``` are all changed to reflect the changed query as seen in the screenshot. The variable ```messages``` is updated  to include the new line "Bob: Hello_Varun."
-\
 # Part 2
 **The absolute path to the private key for your SSH key for logging into ieng6 (on your computer, an EdStem workspace, or on the home directory of the lab computer)**\
 ![Image](part2question1.png) \
