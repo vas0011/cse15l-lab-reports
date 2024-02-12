@@ -42,4 +42,24 @@ This command searches the working directory technical and its subdirectories to 
 $ varun@Varuns-MacBook-Pro technical % find ./biomed -empty
 ```
 In this example find just searches the biomed subdirectory of technical for empty files or directories. Since there are no empty files or directories in biomed nothing is outputted by the command.
+## ```find -type examples```
+**Example 1**
+```
+varun@Varuns-MacBook-Pro technical % find . -type d
+.
+./government
+./government/About_LSC
+./government/Env_Prot_Agen
+./government/Alcohol_Problems
+./government/Gen_Account_Office
+./government/Post_Rate_Comm
+./government/Media
+./plos
+./biomed
+./911report
+```
 
+**Example 2**
+## ```find -empty examples```
+**Example 1**
+**Example 2**
