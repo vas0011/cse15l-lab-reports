@@ -7,7 +7,7 @@
 $ varun@Varuns-MacBook-Pro technical % find . -empty
   ./911report/empty.txt
 ```
-This command searches the working directory technical and its subdirectories to look for an empty files or directories. In this example there is an empty file called empty.txt (which I created) in the 911report subdirectory of techincal.
+This command searches the working directory technical and its subdirectories to look for an empty files or directories. In this example there is an empty file called empty.txt (which I created) in the 911report subdirectory of techincal. \
 **Example 2**
 ```
 varun@Varuns-MacBook-Pro technical % find ./biomed -empty
