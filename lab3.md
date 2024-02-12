@@ -4,29 +4,11 @@
 ## ```find -empty examples```
 **Example 1**
 ```
-varun@Varuns-MacBook-Pro path-examples % find . -empty                                
-./quiz-layout/classes/history/history-of-computing.pdf
-./quiz-layout/classes/history/lovelace.txt
-./quiz-layout/classes/history/liskov.txt
-./quiz-layout/classes/history/turing.txt
-./quiz-layout/classes/cse/ExampleClass.java
-./quiz-layout/classes/cse/generics.txt
-./quiz-layout/classes/cse/linked-list.txt
-./quiz-layout/classes/cse/interfaces.txt
-./quiz-layout/classes/biomed/genes1.txt
-./quiz-layout/classes/biomed/paper-about-genetics.pdf
-./quiz-layout/classes/biomed/genes2.txt
-./quiz-layout/classes/biomed/genes3.txt
-./quiz-layout/general-notes/course-plan-w23.txt
-./quiz-layout/general-notes/todos.txt
-./.git/objects/info
-./.git/refs/tags
+varun@Varuns-MacBook-Pro technical % find . -empty
+./911report/empty.txt
 ```
+This command searches the working directory technical and its subdirectories to look for an empty files or directories. In this example there is an empty file (which I created) called empty.txt in the 911report subdirectory of techincal.
 **Example 2**
 ```
-varun@Varuns-MacBook-Pro path-examples % find ./quiz-layout/classes/biomed -empty  
-./quiz-layout/classes/biomed/genes1.txt
-./quiz-layout/classes/biomed/paper-about-genetics.pdf
-./quiz-layout/classes/biomed/genes2.txt
-./quiz-layout/classes/biomed/genes3.txt
+varun@Varuns-MacBook-Pro technical % find ./biomed -empty
 ```
