@@ -1,6 +1,8 @@
 # Part 1 - Bugs
 ## Code for ChatServer
 # Part 2 - Researching Commands
+## ```find -empty examples```
+**Example 1**
 ```
 varun@Varuns-MacBook-Pro path-examples % find . -empty                                
 ./quiz-layout/classes/history/history-of-computing.pdf
