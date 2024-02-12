@@ -13,3 +13,4 @@ This command searches the working directory technical and its subdirectories to 
 ```
 varun@Varuns-MacBook-Pro technical % find ./biomed -empty
 ```
+In this example find just searches the biomed subdirectory of technical for empty files or directories. Since there are no empty files or directories in biomed nothing is outputted by the command.
