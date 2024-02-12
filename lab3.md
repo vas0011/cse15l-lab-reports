@@ -60,6 +60,28 @@ varun@Varuns-MacBook-Pro technical % find . -type d
 ```
 
 **Example 2**
+```
+varun@Varuns-MacBook-Pro technical % find ./911report -type f
+./911report/empty.txt
+./911report/chapter-13.4.txt
+./911report/chapter-13.5.txt
+./911report/chapter-13.1.txt
+./911report/chapter-13.2.txt
+./911report/chapter-13.3.txt
+./911report/chapter-3.txt
+./911report/chapter-2.txt
+./911report/chapter-1.txt
+./911report/chapter-5.txt
+./911report/chapter-6.txt
+./911report/chapter-7.txt
+./911report/chapter-9.txt
+./911report/chapter-8.txt
+./911report/preface.txt
+./911report/chapter-12.txt
+./911report/chapter-10.txt
+./911report/chapter-11.txt
+```
+
 ## ```find -empty examples```
 **Example 1**
 **Example 2**
