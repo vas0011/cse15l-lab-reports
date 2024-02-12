@@ -13,7 +13,8 @@ $ varun@Varuns-MacBook-Pro technical % find . -size +200k
   ./911report/chapter-13.5.txt
   ./911report/chapter-3.txt
 ```
-Using the ```-size``` option for find allows us to search for files based on their size. In this example we are looking for files in the current directory (technical) for files that are more than 200 kilobytes in size. The ```+``` indicates more than and the ```k``` indicates kilobytes. This is useful if we want to look for a file you don't know the name of but know that is a large file. It is also useful to know which files take up a lot of space if you are trying to use the least amount of space for your project.
+Using the ```-size``` option for find allows us to search for files based on their size. In this example we are looking for files in the current directory (technical) for files that are more than 200 kilobytes in size. The ```+``` indicates more than and the ```k``` indicates kilobytes. This is useful if we want to look for a file you don't know the name of but know that is a large file. It is also useful to know which files take up a lot of space if you are trying to use the least amount of space for your project. 
+
 **Example 2**
 ```
 $ varun@Varuns-MacBook-Pro technical % find . -size -900c 
@@ -34,7 +35,7 @@ In this example we are looking for files in the current directory (technical) fo
 $ varun@Varuns-MacBook-Pro technical % find . -empty
   ./911report/empty.txt
 ```
-This command searches the working directory technical and its subdirectories to look for an empty files or directories. In this example there is an empty file called empty.txt (which I created) in the 911report subdirectory of techincal. \
+This command searches the working directory technical and its subdirectories to look for an empty files or directories. In this example there is an empty file called empty.txt (which I created) in the 911report subdirectory of techincal. 
 
 **Example 2**
 ```
