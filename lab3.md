@@ -58,7 +58,7 @@ varun@Varuns-MacBook-Pro technical % find . -type d
 ./biomed
 ./911report
 ```
-
+Using the ```-type``` option allows you to search for files based on their type. In this example we are searching the directory technical for other directories using the ```d```. The other subdirectories of techinical and their subdirectories are outputted. This is useful because you can get a good idea of all the directories you are working with. 
 **Example 2**
 ```
 varun@Varuns-MacBook-Pro technical % find ./911report -type f
