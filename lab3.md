@@ -25,7 +25,7 @@ This test passed:
     assertArrayEquals(new int[]{ 1 }, input1);
 	}
 ```
-The symptom for testReverseInPlace is:
+The symptoms for testReverseInPlace and testReverseInPlace2 are:
 ![Image](symptom.png)
 
 
