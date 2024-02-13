@@ -85,7 +85,18 @@ $ varun@Varuns-MacBook-Pro technical % find ./government -type f
   ... more lines ...
 ```
 In this example we are searching the directory government for files using ```f```. The files in government and its subdirectories are outputted. This is useful because you can check for all the files within a directory and its subdirectories and you can use this command with other commands such as name which makes it even more useful.
-## ```find -empty examples```
+## ```find -cmin examples```
 **Example 1**
-
+```
+$ varun@Varuns-MacBook-Pro technical % find . -cmin -3000
+  ./government/About_LSC/Progress_report.txt
+  ./911report
+  ./911report/empty.txt
+```
+Using the ```-cmin``` option allows you to search for files that were created n minutes ago. In this example we are searching the directory technical and its subdirectories for files or directories created less than 3000 minutes ago which is indicated by ```-3000```. The  subdirectories of techinical and files are outputted that were created less than 3000 minutes ago. This is useful because you can see files you accessed recently or created recently.
 **Example 2**
+```
+$ varun@Varuns-MacBook-Pro technical % find . -cmin -300 
+  ./government/About_LSC/Progress_report.txt
+```
+In this example we are searching the directory technical and its subdirectories for files or directories created less than 300 minutes ago which is indicated by ```-300```. The  subdirectories of techinical and files are outputted that were created less than 300 minutes ago.
