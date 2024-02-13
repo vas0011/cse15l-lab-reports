@@ -1,12 +1,4 @@
 # Part 1 - Bugs
-Here is the code with bugs for the ```reverseInPlace``` method.
-```
-static void reverseInPlace(int[] arr) {
-    for(int i = 0; i < arr.length; i += 1) {
-      arr[i] = arr[arr.length - i - 1];
-    }
-  }
-```
 Here is the test that doesn't pass when I run it for ```reverseInPlace```. The expected output is the revers of the arrary of input 1. However the same array is outputted whe the test is run.
 ```
 @Test 
@@ -27,7 +19,26 @@ This test passed:
 ```
 The symptoms for testReverseInPlace and testReverseInPlace2 are:
 ![Image](symptom.png)
-
+As seen in the output, the test testReverseInPlace does not pass because we expected 3 and index 1 but 1 was actually at index 1. \
+Here is the code with bugs for the ```reverseInPlace``` method.
+```
+static void reverseInPlace(int[] arr) {
+    for(int i = 0; i < arr.length; i += 1) {
+      arr[i] = arr[arr.length - i - 1];
+    }
+  }
+```
+Here is the code fixed:
+```
+static void reverseInPlace(int[] arr) {
+    for(int i = 0; i < arr.length/2; i += 1) {
+        int temp = arr[i];
+        arr[i] = arr[arr.length - i - 1];
+        arr[arr.length - i - 1] = temp;
+    }
+  }
+```
+The fix adresses the issue because in the code with bugs the code first correctly puts the last element at the first index however when it gets to the last index it copies the new first index to the last index. In the fixed code works because the for loop only traverses half the array and swithces the elements on either sides of the array.
 
 
 
