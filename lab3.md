@@ -7,7 +7,7 @@ static void reverseInPlace(int[] arr) {
     }
   }
 ```
-Here is the test that doesn't pass when I run it for ```reverseInPlace```.
+Here is the test that doesn't pass when I run it for ```reverseInPlace```. The expected output is the revers of the arrary of input 1. However the same array is outputted whe the test is run.
 ```
 @Test 
 	public void testReverseInPlace() {
@@ -16,6 +16,20 @@ Here is the test that doesn't pass when I run it for ```reverseInPlace```.
     assertArrayEquals(new int[]{ 1,3 }, input1);
 	}
 ```
+This test passed:
+```
+@Test
+  public void testReverseInPlace2() {
+    int[] input1 = { 1 };
+    ArrayExamples.reverseInPlace(input1);
+    assertArrayEquals(new int[]{ 1 }, input1);
+	}
+```
+The symptom for testReverseInPlace is:
+![Image](symptom.png)
+
+
+
 
 # Part 2 - Researching Commands
 ## ```find -size examples```
