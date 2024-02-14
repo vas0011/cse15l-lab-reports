@@ -8,18 +8,18 @@ public void testReverseInPlace() {
     assertArrayEquals(new int[]{ 1,3 }, input1);
 }
 ```
-This test, however, passes:
+This test, however, passes where ```input1``` is just an array of ```{ 1 }```.
 ```
 @Test
   public void testReverseInPlace2() {
     int[] input1 = { 1 };
     ArrayExamples.reverseInPlace(input1);
     assertArrayEquals(new int[]{ 1 }, input1);
-	}
+}
 ```
-The symptoms for testReverseInPlace and testReverseInPlace2 are:
+The symptoms for ```testReverseInPlace``` and ```testReverseInPlace2``` are:
 ![Image](symptom.png)
-As seen in the output, the test testReverseInPlace does not pass because we expected 3 and index 1 but 1 was actually at index 1. \
+As seen in the output, ```testReverseInPlace2``` passes but the test ```testReverseInPlace``` does not pass because we expected 3 and index 1 but 1 was actually at index 1. \
 Here is the code with bugs for the ```reverseInPlace``` method.
 ```
 static void reverseInPlace(int[] arr) {
@@ -28,7 +28,7 @@ static void reverseInPlace(int[] arr) {
     }
   }
 ```
-Here is the code fixed:
+Here is the fixed code for ```reverseInPlace```:
 ```
 static void reverseInPlace(int[] arr) {
     for(int i = 0; i < arr.length/2; i += 1) {
@@ -38,9 +38,7 @@ static void reverseInPlace(int[] arr) {
     }
   }
 ```
-The fix adresses the issue because in the code with bugs the code first correctly puts the last element at the first index however when it gets to the last index it copies the new first index to the last index. In the fixed code works because the for loop only traverses half the array and swithces the elements on either sides of the array.
-
-
+The fix adresses the issue because in the code with bugs, the code first correctly puts the last element at the first index however when it gets to the last index it copies the new first index to the last index. The fixed code works because the for loop only traverses half the array and switches the elements on either sides of the array at the same time. This makes sure that the value at an index is not copied over to the other side of the array incorrectly because the ```temp``` variable stores the intial value at the index ```i```.
 
 # Part 2 - Researching Commands
 ## ```find -size examples```
