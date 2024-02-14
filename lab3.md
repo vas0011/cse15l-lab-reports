@@ -101,7 +101,7 @@ $ varun@Varuns-MacBook-Pro technical % find . -type d
   ./biomed
   ./911report
 ```
-Using the ```-type``` option allows you to search for files based on their type. In this example we are searching the directory technical for other directories using the ```d```. The other subdirectories of techinical and their subdirectories are outputted. This is useful because you can get a good idea of all the directories you are working with. 
+Using the ```-type``` option allows you to search for directories or files based on their type. In this example we are searching the directory technical and its subdirectories for other directories using the ```d```. The other subdirectories of techinical and their subdirectories are outputted. This is useful because you can get a good idea of all the directories you are working with. 
 
 **Example 2**
 ```
@@ -127,7 +127,7 @@ $ varun@Varuns-MacBook-Pro technical % find ./government -type f
   ./government/Env_Prot_Agen/section-by-section_summary.txt
   ... more lines ...
 ```
-In this example we are searching the directory government for files using ```f```. The files in government and its subdirectories are outputted. This is useful because you can check for all the files within a directory and its subdirectories and you can use this command with other commands such as name which makes it even more useful. \
+In this example we are searching the directory government and its subdirectories for files using ```f```. The files in government and its subdirectories are outputted. This is useful because you can check for all the files within a directory and its subdirectories and you can use this command with other commands such as name which makes it even more useful. \
 I found information about this option using man find and using this link: [https://www.ibm.com/docs/pl/aix/7.1?topic=f-find-command](url).
 ## ```find -cmin examples```
 **Example 1**
@@ -137,12 +137,12 @@ $ varun@Varuns-MacBook-Pro technical % find . -cmin -3000
   ./911report
   ./911report/empty.txt
 ```
-Using the ```-cmin``` option allows you to search for files that were created n minutes ago. In this example we are searching the directory technical and its subdirectories for files or directories created less than 3000 minutes ago which is indicated by ```-3000```. The  subdirectories of techinical and files are outputted that were created less than 3000 minutes ago. This is useful because you can see files you accessed recently or created recently.
+Using the ```-cmin``` option allows you to search for files that were created n minutes ago. In this example we are searching the directory technical and its subdirectories for files or directories created less than 3000 minutes ago which is indicated by ```-3000```. The  subdirectories of techinical and files are outputted that were created less than 3000 minutes ago. This is useful because you can see files and directories you made changes to recently or created recently.
 
 **Example 2**
 ```
-$ varun@Varuns-MacBook-Pro technical % find . -cmin -300 
+$ varun@Varuns-MacBook-Pro technical % find . -cmin -10 
   ./government/About_LSC/Progress_report.txt
 ```
-In this example we are searching the directory technical and its subdirectories for files or directories created less than 300 minutes ago which is indicated by ```-300```. The  subdirectories of techinical and files are outputted that were created less than 300 minutes ago. \
+In this example we are searching the directory technical and its subdirectories for files or directories created less than 10 minutes ago which is indicated by ```-10```. The file that was created less than 10 minutes ago was outputted. This is useful because you can see files and directories you made changes to recently or created recently. \
 I found information about this option using man find and using this link: [https://www.ibm.com/docs/pl/aix/7.1?topic=f-find-command](url).
