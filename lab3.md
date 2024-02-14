@@ -2,11 +2,11 @@
 Here is the test that doesn't pass when I run it for ```reverseInPlace```. The expected output is the revers of the arrary of input 1. However the same array is outputted whe the test is run.
 ```
 @Test 
-	public void testReverseInPlace() {
+public void testReverseInPlace() {
     int[] input1 = { 3,1 };
     ArrayExamples.reverseInPlace(input1);
     assertArrayEquals(new int[]{ 1,3 }, input1);
-	}
+}
 ```
 This test passed:
 ```
