@@ -1,5 +1,5 @@
 # Part 1 - Bugs
-Here is the test that doesn't pass when I run it for ```reverseInPlace```. The expected output is the revers of the arrary of input 1. However the same array is outputted whe the test is run.
+Here is the code for the test method for ```reverseInPlace``` that doesn't pass when I run it . The expected output after using ```reverseInPlace``` on ```input1``` is the reverse of the arrary of ```input1``` which is ```{ 1.3 }```. 
 ```
 @Test 
 public void testReverseInPlace() {
@@ -8,7 +8,7 @@ public void testReverseInPlace() {
     assertArrayEquals(new int[]{ 1,3 }, input1);
 }
 ```
-This test passed:
+This test, however, passes:
 ```
 @Test
   public void testReverseInPlace2() {
