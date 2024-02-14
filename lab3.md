@@ -70,7 +70,7 @@ $ varun@Varuns-MacBook-Pro technical % find . -size -900c
   ./911report/empty.txt
 ```
 In this example we are looking for files in the current directory (technical) and its subdirectories that are less than 900 bytes in size. The ```-``` indicates less than and the ```c``` indicates bytes. This is useful if we want to look for a file that is small. \
-I found information about this option using man find and using this link: https://www.ibm.com/docs/pl/aix/7.1?topic=f-find-command.
+I found information about this option using man find and using this link: [https://www.ibm.com/docs/pl/aix/7.1?topic=f-find-command](url).
 ## ```find -empty examples```
 **Example 1**
 ```
@@ -84,7 +84,7 @@ This command searches the working directory technical and its subdirectories to 
 $ varun@Varuns-MacBook-Pro technical % find ./biomed -empty
 ```
 In this example find just searches the biomed subdirectory of technical for empty files or directories. Since there are no empty files or directories in biomed nothing is outputted by the command. This is useful if we want to make sure there aren't any unused files. \
-I found information about this option using man find and using this link: https://www.ibm.com/docs/pl/aix/7.1?topic=f-find-command.
+I found information about this option using man find and using this link: [https://www.ibm.com/docs/pl/aix/7.1?topic=f-find-command](url).
 ## ```find -type examples```
 **Example 1**
 ```
@@ -128,7 +128,7 @@ $ varun@Varuns-MacBook-Pro technical % find ./government -type f
   ... more lines ...
 ```
 In this example we are searching the directory government for files using ```f```. The files in government and its subdirectories are outputted. This is useful because you can check for all the files within a directory and its subdirectories and you can use this command with other commands such as name which makes it even more useful. \
-I found information about this option using man find and using this link: https://www.ibm.com/docs/pl/aix/7.1?topic=f-find-command.
+I found information about this option using man find and using this link: [https://www.ibm.com/docs/pl/aix/7.1?topic=f-find-command](url).
 ## ```find -cmin examples```
 **Example 1**
 ```
@@ -145,4 +145,4 @@ $ varun@Varuns-MacBook-Pro technical % find . -cmin -300
   ./government/About_LSC/Progress_report.txt
 ```
 In this example we are searching the directory technical and its subdirectories for files or directories created less than 300 minutes ago which is indicated by ```-300```. The  subdirectories of techinical and files are outputted that were created less than 300 minutes ago. \
-I found information about this option using man find and using this link: https://www.ibm.com/docs/pl/aix/7.1?topic=f-find-command.
+I found information about this option using man find and using this link: [https://www.ibm.com/docs/pl/aix/7.1?topic=f-find-command](url).
