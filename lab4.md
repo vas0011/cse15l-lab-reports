@@ -1,6 +1,6 @@
 # 4.  Log into ieng6
 ![Image](part4.png)
-
+```<up><enter>```
 # 5. Clone your fork of the repository from your Github account (using the SSH URL)
 ![Image](part5.png)
 
