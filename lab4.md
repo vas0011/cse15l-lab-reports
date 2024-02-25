@@ -5,6 +5,7 @@ Keys pressed: ```<up><enter>```  The ssh vas001@ieng6.ucsd.edu command was 1 up 
 # 5. Clone your fork of the repository from your Github account (using the SSH URL)
 ![Image](part5.png)
 
+I used ctr r and then typed vas to look for the git clone command and the clicked enter
 # 6. Run the tests, demonstrating that they fail
 ![Image](part6.png)
 
