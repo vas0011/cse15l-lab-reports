@@ -13,7 +13,7 @@ Keys pressed: ```<cd><l><tab>```, ```<b><a><s><h><t><tab>``` I typed ```cd l``` 
 # 7. Edit the code file to fix the failing test
 ![Image](part7.png)
 
-Keys pressed: ```<Ctrl><r><v><i><enter>``` I used Ctrl r and vi to search history for the command ```vim ListExamples.java```. 
+Keys pressed: ```<Ctrl><r><v><i><enter>``` I used Ctrl r and "vi" to search history for the command ```vim ListExamples.java```. 
 
 ![Image](part72.png)
 
