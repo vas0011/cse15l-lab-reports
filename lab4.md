@@ -9,7 +9,7 @@ Keys pressed: ```<Ctrl><r><v><a><s><enter>```I used Ctrl r and then typed vas to
 # 6. Run the tests, demonstrating that they fail
 ![Image](part6.png)
 
-Keys pressed: ```<cd><l><tab>```, ```<b><a><s><h><t><tab>``` I typed cd l and then used tab to autocomplete to ```cd ls```. Then I typed bash t and then tab to autocomplete to ```bash test.sh ```.
+Keys pressed: ```<cd><l><tab>```, ```<b><a><s><h><t><tab>``` I typed ```cd l``` and then used tab to autocomplete to ```cd ls```. Then I typed ```bash t``` and then tab to autocomplete to ```bash test.sh ```.
 # 7. Edit the code file to fix the failing test
 ![Image](part7.png)
 
