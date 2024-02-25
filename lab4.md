@@ -5,7 +5,7 @@ Keys pressed: ```<up><enter>```  The ```ssh vas001@ieng6.ucsd.edu``` command was
 # 5. Clone your fork of the repository from your Github account (using the SSH URL)
 ![Image](part5.png)
 
-Keys pressed: ```<Ctrl><r><v><a><s><enter>```I used Ctrl r and then typed vas to look in history for the ```git clone git@github.com:vas0011/lab7.git``` command, since the command has vas in it.
+Keys pressed: ```<Ctrl><r><v><a><s><enter>```I used Ctrl r and then typed vas to look in history for the ```git clone git@github.com:vas0011/lab7.git``` command, since the command has "vas" in it.
 # 6. Run the tests, demonstrating that they fail
 ![Image](part6.png)
 
