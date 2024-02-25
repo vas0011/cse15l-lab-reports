@@ -17,7 +17,7 @@ Keys pressed: ```<Ctrl><r><v><i><enter>``` I used Ctrl r to search history for t
 
 ![Image](part72.png)
 
-Keys pressed: ```<4><3><j><e><x><i><2><esc><shift><;><w><q><enter>``` Use ```43j`` to navigate to the 43 line and then use e to get to the end of the word "index1." Then x deletes 1 and then i puts vim into insert mode and then type 2 to make it "index2" Then exit insert mode by clicking the escape key. Then ```<shift><;>``` gives us the colon and then type wq to save and exit.
+Keys pressed: ```<4><3><j><e><x><i><2><esc><shift><;><w><q><enter>``` Use ```43j``` to navigate to the 43 line and then use e to get to the end of the word "index1." Then x deletes 1 and then i puts vim into insert mode and then type 2 to make it "index2" Then exit insert mode by clicking the escape key. Then ```<shift><;>``` gives us the colon and then type wq to save and exit.
 
 # 8. Run the tests, demonstrating that they now succeed
 ![Image](part8.png)
