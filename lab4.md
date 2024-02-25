@@ -25,3 +25,5 @@ Keys pressed: ```<4><3><j><e><x><i><2><esc><shift><;><w><q><enter>``` Use ```43j
 Keys pressed: ```<up><up><enter>``` The ```bash test.sh ``` command was 2 up in the search history, so I used up arrow to access it.
 # 9. Commit and push the resulting change to your Github account (you can pick any commit message!)
 ![Image](part9.png)
+
+Keys pressed: ```<Ctrl><r><a><d><enter>```,```<Ctrl><r><c><o><m><m><enter>```, ```<Ctrl><r><p><u><enter>``` 
