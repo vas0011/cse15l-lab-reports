@@ -1,7 +1,7 @@
 # 4.  Log into ieng6
 ![Image](part4.png)
 
-```<up><enter>```
+Keys pressed: ```<up><enter>```  The ssh vas001@ieng6.ucsd.edu command was 1 up in the search history, so I used up arrow to access it
 # 5. Clone your fork of the repository from your Github account (using the SSH URL)
 ![Image](part5.png)
 
