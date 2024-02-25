@@ -9,7 +9,7 @@ I used ctr r and then typed vas to look for the git clone command and the clicke
 # 6. Run the tests, demonstrating that they fail
 ![Image](part6.png)
 
-I used ctr r and then typed javac and then enter. Tehn to get java I used Ctr r and then typed java and a space and then clicked enter
+I typed cd l and then did tab to autocomplete. Then I typed bash t and then tab to autocomplete.
 # 7. Edit the code file to fix the failing test
 ![Image](part7.png)
 
