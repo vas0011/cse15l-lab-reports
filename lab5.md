@@ -42,3 +42,4 @@ public class TestListExamples {
 }
 ```
 # At the end, all the information needed about the setup including:
+So from the output we can see that the error is from your ```testMergeRightEnd``` method. 
