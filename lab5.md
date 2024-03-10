@@ -1,11 +1,6 @@
 # Student Post
 Hi TA, when I run my grading script for the code with the correct implementation for merge and filter I am getting a score of 1/2 instead of a score of 2/2. Please help me. I think my bash script looks correct, it might be something wrong with the tests I created.
 ![Image](lab5-1.png)
-# TA Response
-Could you please include the output of when you run the test in your script. Also send me a picture of your tests.
-# Student Response
-Here is the output of the test:
-![Image](lab5-2.png)
 Here is the code for my tests:
 ```
 import static org.junit.Assert.*;
@@ -41,5 +36,68 @@ public class TestListExamples {
 
 }
 ```
+Here is my code for the grading script:
+```
+CPATH='.:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar'
+
+rm -rf student-submission
+rm -rf grading-area
+
+mkdir grading-area
+
+git clone $1 student-submission 2> ta-output.txt
+echo 'Finished cloning'
+
+
+if ! [ -f student-submission/ListExamples.java ]
+then 
+    echo "Missing Necessary Files"
+    exit
+fi
+echo "continue"
+
+cp TestListExamples.java student-submission/ListExamples.java grading-area
+cp -r lib grading-area
+
+cd grading-area
+
+
+javac -cp $CPATH *.java 2> java-compile.txt
+if [ $? -ne 0 ]
+then
+    echo "Compilation Error"
+    exit 1
+fi
+
+java -cp $CPATH org.junit.runner.JUnitCore TestListExamples > junit-output.txt
+
+if grep -q "OK" junit-output.txt; 
+then
+    echo "Your score is 2/2"
+else
+    lastline=$(cat junit-output.txt | tail -n 2 | head -n 1)
+    tests=$(echo $lastline | awk -F'[, ]' '{print $3}')
+    failures=$(echo $lastline | awk -F'[, ]' '{print $6}')
+    successes=$((tests - failures))
+    echo "Your score is $successes / $tests"
+fi
+
+
+# Draw a picture/take notes on the directory structure that's set up after
+# getting to this point
+
+# Then, add here code to compile and run, and do any post-processing of the
+# tests
+```
+
+# TA Response
+Could you please include the output of when you run the test in your script.
+# Student Response
+Here is the output of the test:
+![Image](lab5-2.png)
+I changed this line in grade.sh: ```java -cp $CPATH org.junit.runner.JUnitCore TestListExamples > junit-output.txt``` to this ```ava -cp $CPATH org.junit.runner.JUnitCore TestListExamples``` so I could see the output of the tests.
 # TA Response
 So from the output we can see that the error is from your ```testMergeRightEnd``` method. It seems like you were trying to create two lists where left had the values ```("a", "b", "c", "d")``` and right had the values ```("a", "b", "c")```. However, when you create the variable ```temp``` it still refers to the saem left object so when you ```remove("d")``` it gets rid of ```d``` from the left list so ```left``` is now ```("a", "b", "c")``` and when you assign ```right``` to ```temp```, ```right``` is ```("a", "b", "c")```. To fix this just assign right to ```Arrays.asList("a", "b", "c");```.
+# Part 2 – Reflection
+Something I learned this quarter was how to use the debugger. I found this really helpful because usually when I try to fix a bug in my code I just use print statements to find the values of variables at a specific point. However, using jdb to run the code makes it easier to see values of variables and gives me more information to allow me to catch the bug.
+
