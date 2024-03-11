@@ -1,5 +1,5 @@
 # Student Post
-Hi TA, when I run my grading script for the code with the correct implementation for merge and filter I am getting a score of 1/2 instead of a score of 2/2. Please help me. I think my bash script looks correct, it might be something wrong with the tests I created.
+Hi TA, when I run my grading script for the code with the correct implementation for merge and filter I am getting a score of 1/2 instead of a score of 2/2. Please help me. I think my bash script looks correct, it might be something wrong with the tests I created. I just have a file called ```grade.sh``` and ```TestListExamples.java``` in the same directory.
 Here is the output I got:
 ![Image](lab5-1.png)
 Here is the code for my tests:
@@ -92,13 +92,13 @@ fi
 ```
 
 # TA Response
-Could you please include the output of when you run the test in your script.
+Could you please include the output of the tests when you run ```grade.sh```.
 # Student Response
-Here is the output of the test:
+Here is the output of the tests:
 ![Image](lab5-2.png)
 I changed this line in grade.sh: ```java -cp $CPATH org.junit.runner.JUnitCore TestListExamples > junit-output.txt``` to this ```java -cp $CPATH org.junit.runner.JUnitCore TestListExamples``` so I could see the output of the tests.
 # TA Response
-So from the output we can see that the error is from your ```testMergeRightEnd``` method. It seems like you were trying to create two lists where left had the values ```("a", "b", "c", "d")``` and right had the values ```("a", "b", "c")```. However, when you create the variable ```temp``` it still refers to the saem left object so when you ```remove("d")``` it gets rid of ```d``` from the left list so ```left``` is now ```("a", "b", "c")``` and when you assign ```right``` to ```temp```, ```right``` is ```("a", "b", "c")```. To fix this just assign right to ```Arrays.asList("a", "b", "c");```.
+So from the output we can see that the error is from your ```testMergeRightEnd``` method. It seems like you were trying to create two lists where ```left``` had the values ```("a", "b", "c", "d")``` and ```right``` had the values ```("a", "b", "c")```. However, when you create the variable ```temp``` it still refers to the same ```left``` object so when you ```remove("d")``` it gets rid of ```d``` from the left list so ```left``` is now ```("a", "b", "c")```. When you assign ```right``` to ```temp```, ```right``` is ```("a", "b", "c")```. To fix this just assign right to ```Arrays.asList("a", "b", "c");```.
 # Part 2 – Reflection
 Something I learned this quarter was how to use the debugger. I found this really helpful because usually when I try to fix a bug in my code I just use print statements to find the values of variables at a specific point. However, using jdb to run the code makes it easier to see values of variables and gives me more information to allow me to catch the bug.
 
