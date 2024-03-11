@@ -96,7 +96,7 @@ Could you please include the output of the tests when you run ```grade.sh```.
 # Student Response
 Here is the output of the tests:
 ![Image](lab5-2.png)
-I changed this line in grade.sh: ```java -cp $CPATH org.junit.runner.JUnitCore TestListExamples > junit-output.txt``` to this ```java -cp $CPATH org.junit.runner.JUnitCore TestListExamples``` so I could see the output of the tests.
+I changed this line in grade.sh: ```java -cp $CPATH org.junit.runner.JUnitCore TestListExamples > junit-output.txt``` to this ```java -cp $CPATH org.junit.runner.JUnitCore TestListExamples``` so I could see the output of the tests, without the output being redirected.
 # TA Response
 So from the output we can see that the error is from your ```testMergeRightEnd``` method. It seems like you were trying to create two lists where ```left``` had the values ```("a", "b", "c", "d")``` and ```right``` had the values ```("a", "b", "c")```. However, when you create the variable ```temp``` it still refers to the same ```left``` object so when you ```remove("d")``` it gets rid of ```d``` from the left list so ```left``` is now ```("a", "b", "c")```. When you assign ```right``` to ```temp```, ```right``` is ```("a", "b", "c")```. To fix this just assign right to ```Arrays.asList("a", "b", "c");```.
 # Part 2 – Reflection
